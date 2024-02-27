@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+
+	<section class="services">
+		<ul class="cards">
+			<li class="cards_item">
+				<div class="card">
+					<div class="card_image"><img src="{{ asset('images/internet.svg') }}"></div>
+					<div class="card_content">
+						<h2 class="card_title">URL Shortener</h2>
+						<p class="card_text">Make your url shorter with this service</p>
+						<a class="btn card_btn" href="{{ path('app_url_shortener') }}">Go</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</section>{% endblock %}

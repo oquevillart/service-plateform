@@ -1,0 +1,49 @@
+#url-shortener-form{
+    width: 50%;
+    margin: auto;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#url-shortener-form > .text-input {
+    width: 100%;
+    height: 35px;
+    font-size: 30px;
+    margin-bottom: 2.5rem;
+}
+
+#url-shortener-form > .btn-input {
+    font-size: 28px;
+    margin-bottom: 2.5rem;
+}
+
+.generated-url-area{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 2.5rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    background-color: var(--bg-secondary);
+    border-radius: 0.25rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .4s;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.generated-url-area.active{
+    pointer-events: all;
+    opacity: 1;
+}
+.generated-url-area.error{
+    background-color: brown;
+    opacity: 1;
+}
+
+.generated-url-area:hover{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

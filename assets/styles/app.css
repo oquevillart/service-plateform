@@ -1,0 +1,149 @@
+:root {
+  --bg-primary: rgb(36, 36, 36);
+  --bg-secondary: rgb(51, 51, 51);
+
+  --font-primary: rgb(218, 218, 218);
+  --font-secondary: rgb(255, 255, 255);
+  --shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.menu>ul {
+  display: flex;
+  background-color: var(--bg-secondary);
+  padding: 20px 20px;
+  margin: 0;
+  box-shadow: var(--shadow);
+}
+
+.menu>ul>li {
+  list-style: none;
+  padding: 15px 10px;
+}
+
+.link {
+  color: var(--font-primary);
+  text-decoration: none;
+  transition: all .4s;
+  font-size: 18px;
+}
+
+.link:hover {
+  color: var(--font-secondary);
+}
+
+.content {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+/* board page */
+/* section services */
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  padding: 20px;
+  height: auto;
+  width: 20%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: var(--font-primary);
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  transition: all .4s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.btn:disabled {
+  background-color: rgb(164, 164, 164);
+  cursor: not-allowed;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+  max-width: 450px;
+}
+
+.card_image {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  text-align: center;
+}
+
+.card_title {
+  color: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: var(--font-primary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}

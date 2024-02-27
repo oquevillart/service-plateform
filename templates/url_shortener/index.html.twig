@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UrlShortnerController!{% endblock %}
+
+
+    {% block importmap %}
+        {{ importmap(['app', 'url-shortener']) }}
+    {% endblock %}
+
+
+{% block body %}
+
+<section class="url-shortener">
+    <h1>URL Shortener</h1>
+    <form id="url-shortener-form">
+        <input class="text-input" type="text" name="url"/>
+        <input class="btn btn-process" type="submit" value="Process">
+    </form>
+
+    <div class="generated-url-area">
+    </div>
+    
+</section>
+{% endblock %}
