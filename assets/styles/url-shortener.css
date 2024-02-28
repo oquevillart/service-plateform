@@ -22,6 +22,7 @@
 }
 
 .area-wrapper {
+    position: relative;
     opacity: 0;
     transition: all .4s;
     display: flex;
@@ -51,6 +52,9 @@ img {
     fill: #ffffff33;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    position: absolute;
+    right: 0;
+    height: 30px;
 }
 
 .area-wrapper.active {
