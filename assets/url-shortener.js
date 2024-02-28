@@ -3,6 +3,7 @@ import './styles/url-shortener.css';
 window.addEventListener("load", () => {
     let form = document.getElementById("url-shortener-form");
 
+    let areaWrapper = document.querySelector('.area-wrapper');
     let urlArea = document.querySelector('.generated-url-area');
 
     let btnProcess = document.querySelector(".btn-process");
@@ -24,8 +25,7 @@ window.addEventListener("load", () => {
             body: data,
         }).then(response => response.json())
             .then(data => {
-                console.log(data);
-                urlArea.classList.add("active");
+                areaWrapper.classList.add("active");
                 if (data.error != undefined) {
                     urlArea.classList.add("error");
                     urlArea.innerHTML = data.error
@@ -36,8 +36,7 @@ window.addEventListener("load", () => {
                 
             })
             .catch(err => {
-                console.log(err)
-                urlArea.classList.add("error");
+                areaWrapper.classList.add("error");
                 urlArea.innerHTML = "Error occured"
             })
     }
@@ -55,7 +54,6 @@ window.addEventListener("load", () => {
     })
 
     urlArea.addEventListener("click", () => {
-        console.log(urlArea.innerHTML);
         writeClipboardText(urlArea.innerHTML)
     })
 });

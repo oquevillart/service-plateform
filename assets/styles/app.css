@@ -54,7 +54,7 @@ h1 {
   text-align: center;
 }
 
-img {
+.card_image img {
   padding: 20px;
   height: auto;
   width: 20%;

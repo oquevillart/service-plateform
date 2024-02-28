@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello UrlShortnerController!{% endblock %}
+{% block title %}URL shortener{% endblock %}
 
 
     {% block importmap %}
@@ -17,7 +17,9 @@
         <input class="btn btn-process" type="submit" value="Process">
     </form>
 
-    <div class="generated-url-area">
+    <div class="area-wrapper">
+        <div class="generated-url-area"></div>
+        <img src="{{ asset('images/copy.svg') }}" alt="">
     </div>
     
 </section>

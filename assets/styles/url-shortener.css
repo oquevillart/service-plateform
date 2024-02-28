@@ -1,4 +1,4 @@
-#url-shortener-form{
+#url-shortener-form {
     width: 50%;
     margin: auto;
     margin-top: 2.5rem;
@@ -8,42 +8,72 @@
     align-items: center;
 }
 
-#url-shortener-form > .text-input {
+#url-shortener-form>.text-input {
     width: 100%;
     height: 35px;
     font-size: 30px;
     margin-bottom: 2.5rem;
 }
 
-#url-shortener-form > .btn-input {
+#url-shortener-form>.btn-input {
     font-size: 28px;
     margin-bottom: 2.5rem;
 }
 
-.generated-url-area{
-    width: 50%;
-    padding: 20px;
-    margin: auto;
-    margin-top: 2.5rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    background-color: var(--bg-secondary);
-    border-radius: 0.25rem;
-    text-align: center;
+.area-wrapper {
     opacity: 0;
     transition: all .4s;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 2.5rem;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
     pointer-events: none;
     cursor: pointer;
 }
 
-.generated-url-area.active{
-    pointer-events: all;
-    opacity: 1;
+.area-wrapper:hover {
+    border: 1px solid rgba(255, 255, 255, 0.428);
 }
-.generated-url-area.error{
-    background-color: brown;
-    opacity: 1;
+.area-wrapper:active  {
+    border: 1px solid rgba(21, 179, 27, 0.428);
 }
 
-.generated-url-area:hover{
-    border: 1px solid rgba(255, 255, 255, 0.2);
+img {
+    padding: 10px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    background-color: var(--bg-secondary);
+    border-radius: 0.25rem;
+    fill: #ffffff33;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.area-wrapper.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.generated-url-area {
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    background-color: var(--bg-secondary);
+    border-radius: 0.25rem;
+    text-align: center;
+    transition: all .4s;
+    pointer-events: none;
+    cursor: pointer;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generated-url-area.error {
+    background-color: brown;
+    opacity: 1;
 }
