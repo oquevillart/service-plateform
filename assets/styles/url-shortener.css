@@ -79,13 +79,14 @@ img {
 }
 
 .copy-message{
+    font-weight: bold;
     opacity: 0;
     pointer-events: none;
 }
 
 .copy-message.active{
     opacity: 1;
-    width: 100px;
     margin: auto;
-    color: green;
+    text-align: center;
+    margin-top: 20px;
 }
