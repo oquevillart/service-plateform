@@ -8,6 +8,8 @@ window.addEventListener("load", () => {
 
     let btnProcess = document.querySelector(".btn-process");
 
+    let copyMessage = document.querySelector('.copy-message');
+
     async function writeClipboardText(text) {
         try {
             await navigator.clipboard.writeText(text);
@@ -53,7 +55,11 @@ window.addEventListener("load", () => {
         },5000)
     })
 
-    urlArea.addEventListener("click", () => {
+    areaWrapper.addEventListener("click", () => {
+        copyMessage.classList.add('active')
+        setTimeout(() => {
+            copyMessage.classList.remove('active')
+        },4000)
         writeClipboardText(urlArea.innerHTML)
     })
 });
