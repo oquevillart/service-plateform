@@ -27,6 +27,7 @@
     transition: all .4s;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50%;
     margin: auto;
     margin-top: 2.5rem;
@@ -47,7 +48,6 @@
 img {
     padding: 10px;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    background-color: var(--bg-secondary);
     border-radius: 0.25rem;
     fill: #ffffff33;
     border-top-left-radius: 0;
@@ -94,4 +94,15 @@ img {
     margin: auto;
     text-align: center;
     margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+    #url-shortener-form {
+        width: 100%;
+
+    }    
+    .area-wrapper {
+        width: 100%;
+
+    }
 }
