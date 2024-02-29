@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}URL shortener{% endblock %}
+
+
+    {% block importmap %}
+        {{ importmap(['app', 'hangman']) }}
+    {% endblock %}
+
+
+{% block body %}
+
+<section class="hangman-game">
+    <h1>Hangman Game</h1>
+
+    <div class="area-wrapper">
+        <div class="generated-word-area"></div>
+    </div>
+    <form id="word-form">
+        <input class="text-input" type="text" name="word"  maxlength="1" minlength="1"/>
+        <input class="btn btn-process" type="submit" value="Test">
+    </form>
+    
+</section>
+{% endblock %}

@@ -20,4 +20,8 @@ return [
         'path' => './assets/url-shortener.js',
         'entrypoint' => true,
     ],
+    'hangman' => [
+        'path' => './assets/hangman.js',
+        'entrypoint' => true,
+    ],
 ];
