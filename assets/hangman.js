@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
         return regex.test(input);
     }
 
-    String.prototype.replaceAt = function(index, replacement) {
+    String.prototype.replaceAt = function (index, replacement) {
         return this.substring(0, index) + replacement + this.substring(index + replacement.length);
     }
 
@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
                     if (useRegex(element) == false) {
                         secretWord += "_";
                     }
-                    else{
+                    else {
                         secretWord += element
                     }
                 }
@@ -58,7 +58,7 @@ window.addEventListener("load", () => {
         for (let i = 0; i < word.length; i++) {
             if (word[i] == data.get('word')) {
                 if (urlArea.innerHTML[i] == "_") {
-                    urlArea.innerHTML = urlArea.innerHTML.replaceAt(i,data.get('word'));
+                    urlArea.innerHTML = urlArea.innerHTML.replaceAt(i, data.get('word'));
                     wordInput.value = "";
                     isTrue = true;
                 }
@@ -67,11 +67,9 @@ window.addEventListener("load", () => {
         if (isTrue == false) {
             areaWrapper.classList.add("error");
         }
-        else{
+        else {
             areaWrapper.classList.add("active");
         }
     })
 
 });
-
-
