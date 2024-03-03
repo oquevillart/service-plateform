@@ -21,7 +21,6 @@ window.addEventListener("load", () => {
     function fetchUrl() {
         const data = new FormData(form);
         const controller = new AbortController()
-        console.log(data);
         fetch("/ajax/url-shortener", {
             method: "POST",
             body: data,

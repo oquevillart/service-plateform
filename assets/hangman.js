@@ -96,7 +96,7 @@ window.addEventListener("load", () => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         areaWrapper.classList.remove("error", "active");
-        console.log(oldWord);
+
         let isTrue = false;
         let data = new FormData(form)
         for (let i = 0; i < word.length; i++) {
