@@ -6,6 +6,7 @@ use App\Entity\Service;
 use App\Entity\User;
 use App\Controller\Admin\ServiceCrudController;
 use App\Entity\ShortenedUrl;
+use App\Entity\Word;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -48,8 +49,9 @@ class DashboardController extends AbstractDashboardController
     {
         return [
             MenuItem::linkToDashboard('Dashboard', 'fa fa-home'),
-            MenuItem::linkToCrud('Shortened URL', 'fa fa-tags', ShortenedUrl::class),
-            MenuItem::linkToCrud('User', 'fa fa-tags', User::class),
+            MenuItem::linkToCrud('Shortened URLs', 'fa fa-tags', ShortenedUrl::class),
+            MenuItem::linkToCrud('Words', 'fa fa-tags', Word::class),
+            MenuItem::linkToCrud('Users', 'fa fa-tags', User::class),
         ];
     }
 }

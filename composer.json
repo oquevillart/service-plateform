@@ -13,6 +13,7 @@
         "doctrine/doctrine-bundle": "^2.11",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.0",
+        "easycorp/easyadmin-bundle": "^4.9",
         "runtime/frankenphp-symfony": "^0.2.0",
         "symfony/asset": "7.0.*",
         "symfony/asset-mapper": "7.0.*",
@@ -80,6 +81,7 @@
         }
     },
     "require-dev": {
+        "symfony/debug-bundle": "7.0.*",
         "symfony/maker-bundle": "^1.55",
         "symfony/stopwatch": "7.0.*",
         "symfony/var-dumper": "7.0.*",

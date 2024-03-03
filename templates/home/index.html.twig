@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Accueil
+{% endblock %}
 
 {% block body %}
 
@@ -16,7 +17,16 @@
 					</div>
 				</div>
 			</li>
+			<li class="cards_item">
+				<div class="card">
+					<div class="card_image"><img src="{{ asset('images/internet.svg') }}"></div>
+					<div class="card_content">
+						<h2 class="card_title">Hangman Game</h2>
+						<p class="card_text">Make your day less boring. (Maybe)</p>
+						<a class="btn card_btn" href="{{ path('app_hangman') }}">Go</a>
+					</div>
+				</div>
+			</li>
 		</ul>
-	</div>
-
-</section>{% endblock %}
+	</section>
+{% endblock %}
